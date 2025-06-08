@@ -7,40 +7,40 @@
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>P.O.S</h1>
+  
   <section id="inicio-login"> 
-    <div>
-      <label for="ingresar-usuario"></label>
-      <input type="text" id="ingresar-usuario" placeholder="Usuario" />
+    <h1>INICIAR-SECIÓN</h1>
+    <div id="ingresar-fix">
+      <label for="ingresa-usuario"></label>
+      <input type="text" id="ingresa-usuario" placeholder="Usuario" />
 
-      <label for="ingresar-password"></label>
-      <input type="password" id="ingresar-password" placeholder="Password" />
+      <label for="ingresa-password"></label>
+      <input type="password" id="ingresa-password" placeholder="Password" />
 
-      <button type="submit" id="boton-inicio">Iniciar</button>
+      <button class="botones-generales" type="submit" id="boton-inicio">Iniciar</button>
     </div>
+    <P id="mensaje"></P>
   </section>
   
   <section id="seleccionar-pos">
-    <h2>Menu POS</h2>
-    <div>   
-      
-      <div>
-        <button id="boton-almacen">ALMACEN</button>
-      </div>
-
-      <div>
-        <button id="boton-gestion">ALMACEN-GESTION</button>
-      </div>
-      
-      <div>
-        <button id="boton-inventario">INVENTARIO</button>
-      </div>
-      
-      <button id="boton-registro">REGISTRO-DE-VENTAS</button>
-      
+    <h2>MENÚ</h2>
+    <div class="boton-seleccionar-pos">
+      <button class="botones-generales" id="boton-almacen">ALMACEN</button>
+    
+      <button class="botones-generales" id="boton-gestion">ALMACEN-GESTION</button>
+    
+      <button class="botones-generales" id="boton-inventario">INVENTARIO</button>
+   
+      <button class="botones-generales" id="boton-registro">REGISTRO-DE-VENTAS</button>
+    
+      <button class="botones-generales" id="cerrar-sesion">CERRAR SESIÓN</button>
     </div>
+    
   </section>
 
+  <section id="seccion-almacen">
+    
+  </section>
   <script src="script.js"></script>
 </body>
 </html>

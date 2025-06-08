@@ -1,17 +1,23 @@
 
-let ingresarInicioUsuario = document.getElementById("ingresar-usuario").value.trim();
-let ingresarInicioContra = document.getElementById("ingresar-password").value.trim();
+document.getElementById("boton-inicio").addEventListener("click", function(e){
+e.preventDefault();
 
-document.getElementById("boton-inicio").addEventListener("click", function(){
+let ingresarInicioUsuario = document.getElementById("ingresa-usuario").value.trim();
+let ingresarInicioContra = document.getElementById("ingresa-password").value.trim();
 
-let usuarioValido = "mas";
+let usuarioValido = "123";
 let claveValida = "123";
 
 if (ingresarInicioUsuario === usuarioValido && ingresarInicioContra === claveValida){
+    document.getElementById("inicio-login").style.display = "none";
+    document.getElementById("seleccionar-pos").style.display = "block";
     
-    alert("Welcome!!");
 } else {
     alert("Incorrecto!!")
 }
+});
 
+document.getElementById("cerrar-sesion").addEventListener("click", function(){
+    document.getElementById("inicio-login").style.display = "block";
+    document.getElementById("seleccionar-pos").style.display = "none";        
 });

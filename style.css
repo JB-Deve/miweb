@@ -1,4 +1,68 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: rgb(231, 228, 219);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+/* TITULOS, BOTONES, BOX-TEXT DESIGN*/
+h1, h2 {
+  text-align: center;
+  padding: 2px;
+  font-size: 30px;
+  font-family:'Courier New', Courier, monospace;
+  margin: 0;
+}
+.botones-generales {
+  background-color: aquamarine;
+  border-radius: 10px;
+  padding: 15px;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bolder;
+  color: #7a7a7a;
+  margin: 2.5px;
+}
+#ingresa-usuario, #ingresa-password {
+  margin: 2.5px;
+  border-radius: 10px;
+  padding: 15px;
+  font-family:'Courier New', Courier, monospace;
+}
 
+#inicio-login {
+  background-color: rgba(0, 0, 0, 0.158);
+  padding: 15px;
+  border-radius: 15px;
+}
 #seleccionar-pos {
-  display: none;
+  background-color: rgba(0, 0, 0, 0.158);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  min-width: 301px;
+  text-align: center;
+}
+/* ALING-GRID */
+.boton-seleccionar-pos {
+  display: grid;
+}
+#cerrar-sesion {
+  background-color: rgb(255, 160, 125);
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  grid-column: 2/span 1;
+  grid-row: 1/span 4;
+}
+#ingresar-fix {
+  display: grid;
+  margin-bottom: 10px;
+}
+#boton-inicio {
+  margin: 2.5px;
+  grid-column: 2/span 1;
+  grid-row: 1/span 4;
+
 }
