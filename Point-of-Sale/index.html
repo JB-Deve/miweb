@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sistema POS</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <section id="inicio-login"> 
+    <h1>INICIAR-SECIÓN</h1>
+    <div id="ingresar-fix">
+      <label for="ingresa-usuario"></label>
+      <input type="text" class="text-area-global" id="ingresa-usuario" placeholder="Usuario" />
+
+      <label for="ingresa-password"></label>
+      <input type="password" class="text-area-global" id="ingresa-password" placeholder="Password" />
+
+      <button class="botones-generales" type="submit" id="boton-inicio">Iniciar</button>
+    </div>
+    <P id="mensaje"></P>
+  </section>
+  
+  <section id="seleccionar-pos">
+    <h2>MENÚ</h2>
+    <div class="boton-seleccionar-pos">
+      <button class="botones-generales modal-contenido" id="boton-almacen">ALMACEN</button>
+    
+      <button class="botones-generales" id="boton-gestion">ALMACEN-GESTION</button>
+    
+      <button class="botones-generales" id="boton-inventario">INVENTARIO</button>
+   
+      <button class="botones-generales" id="boton-registro">REGISTRO-DE-VENTAS</button>
+    
+      <button class="botones-generales" id="cerrar-sesion" onclick="abrirModal()">CERRAR SESIÓN</button>
+    </div>
+  </section>
+<!--PRIMERA PARTE DEL ALMACEN-->
+  <section id="seccion-almacen">
+    <h2>GESTIONAR</h2>
+      <div class="clase-almacen" id="div-agregar-producto">
+        <p id="titulo-base">Añadir Producto</p>
+        <input type="text" class="text-area-global"></input>
+        <input type="text" class="text-area-global"></input>
+        <button type="submit" class="botones-generales" id="btn-agregar-producto">Añadir</button>
+      </div>
+      <div class="clase-almacen">
+        <p>Editar Producto</p>
+        <select name="" id="seleccionar-producto-gestion" class="text-area-global"></select>
+        <input type="text" class="text-area-global"></input>
+        <select name="" id="seleccionar-variante-festion" class="text-area-global"></select>
+        <input type="text" class="text-area-global"></input>
+        <button type="submit" class="botones-generales" id="btn-editar-producto">Editar</button>
+      </div>
+      <div class="clase-almacen">
+        <p>Eliminar Producto</p>
+        <input type="text" class="text-area-global"></input>
+        <input type="text" class="text-area-global"></input>
+        <button type="submit" class="botones-generales" id="btn-eliminar-producto">Eliminar</button>
+      </div>  
+  </section>
+
+  <!--APRENDIENDO A USAR MODALES-->
+  <div id="confirmacion-modal" class="modal">
+    <div class="modal-contenido-confi">
+      <span class="close" onclick="cerrarModal()">&times;</span>
+      <button id="confirmar-salir" onclick="confirmar()">CONFIRMAR!!</button>
+      <button id="cancelar-salir" onclick="cerrarModal()">CANCELAR!!</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
